@@ -1,4 +1,4 @@
-#Bug Submission Screen
+Bug Submission Screen
 
 This project implements a Bug Submission Screen in SwiftUI, which allows users to submit bug reports by selecting a priority, labels, assignees, attaching images, and entering a description. The app also features the ability to submit bugs to Jira or Notion using a custom popup.
 
