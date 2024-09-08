@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B210DD092C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD072C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift */; };
+		B210DD0A2C8CF00C00C63E1A /* SubmitBugToJiraUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD082C8CF00C00C63E1A /* SubmitBugToJiraUseCase.swift */; };
+		B210DD0D2C8CF01200C63E1A /* JiraRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD0B2C8CF01200C63E1A /* JiraRepository.swift */; };
+		B210DD0E2C8CF01200C63E1A /* NotionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD0C2C8CF01200C63E1A /* NotionRepository.swift */; };
+		B210DD132C8CF04200C63E1A /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD112C8CF04200C63E1A /* UIImage+Extension.swift */; };
+		B210DD142C8CF04200C63E1A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD122C8CF04200C63E1A /* ImagePicker.swift */; };
+		B210DD182C8CF07200C63E1A /* BugSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD172C8CF07200C63E1A /* BugSubmissionViewModel.swift */; };
+		B210DD1D2C8CF09200C63E1A /* BugSubmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD1C2C8CF09200C63E1A /* BugSubmissionView.swift */; };
+		B210DD222C8CF88B00C63E1A /* CustomImageSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD212C8CF88B00C63E1A /* CustomImageSectionView.swift */; };
+		B210DD242C8CF8A000C63E1A /* CustomPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD232C8CF8A000C63E1A /* CustomPopupView.swift */; };
+		B2F32CB22C8749EE00AD9BA4 /* Bug_Submission_ScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F32CB12C8749EE00AD9BA4 /* Bug_Submission_ScreenApp.swift */; };
+		B2F32CB62C8749F000AD9BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F32CB52C8749F000AD9BA4 /* Assets.xcassets */; };
+		B2F32CB92C8749F000AD9BA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F32CB82C8749F000AD9BA4 /* Preview Assets.xcassets */; };
+		B2F32CC22C874A3B00AD9BA4 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F32CC12C874A3B00AD9BA4 /* Bug.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B210DD072C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitBugToNotionUseCase.swift; sourceTree = "<group>"; };
+		B210DD082C8CF00C00C63E1A /* SubmitBugToJiraUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitBugToJiraUseCase.swift; sourceTree = "<group>"; };
+		B210DD0B2C8CF01200C63E1A /* JiraRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiraRepository.swift; sourceTree = "<group>"; };
+		B210DD0C2C8CF01200C63E1A /* NotionRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotionRepository.swift; sourceTree = "<group>"; };
+		B210DD112C8CF04200C63E1A /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		B210DD122C8CF04200C63E1A /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B210DD172C8CF07200C63E1A /* BugSubmissionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugSubmissionViewModel.swift; sourceTree = "<group>"; };
+		B210DD1C2C8CF09200C63E1A /* BugSubmissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugSubmissionView.swift; sourceTree = "<group>"; };
+		B210DD212C8CF88B00C63E1A /* CustomImageSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageSectionView.swift; sourceTree = "<group>"; };
+		B210DD232C8CF8A000C63E1A /* CustomPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
+		B27D0ADC2C8BDBEC009C7872 /* Bug-Submission-Screen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bug-Submission-Screen-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B2F32CAE2C8749EE00AD9BA4 /* Bug Submission Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Bug Submission Screen.app"; path = "/Users/abdallah/Downloads/Bug Submission Screen/build/Debug-iphoneos/Bug Submission Screen.app"; sourceTree = "<absolute>"; };
+		B2F32CB12C8749EE00AD9BA4 /* Bug_Submission_ScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug_Submission_ScreenApp.swift; sourceTree = "<group>"; };
+		B2F32CB52C8749F000AD9BA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2F32CB82C8749F000AD9BA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2F32CC12C874A3B00AD9BA4 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2F32CAB2C8749EE00AD9BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B210DD042C8CEFEF00C63E1A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B210DD062C8CF00600C63E1A /* Use Cases */,
+				B210DD052C8CEFFF00C63E1A /* Repositories */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B210DD052C8CEFFF00C63E1A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B210DD0B2C8CF01200C63E1A /* JiraRepository.swift */,
+				B210DD0C2C8CF01200C63E1A /* NotionRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B210DD062C8CF00600C63E1A /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				B210DD082C8CF00C00C63E1A /* SubmitBugToJiraUseCase.swift */,
+				B210DD072C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		B210DD0F2C8CF02200C63E1A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B2F32CB12C8749EE00AD9BA4 /* Bug_Submission_ScreenApp.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B210DD102C8CF03D00C63E1A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B210DD122C8CF04200C63E1A /* ImagePicker.swift */,
+				B210DD112C8CF04200C63E1A /* UIImage+Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B210DD152C8CF05700C63E1A /* BugSubmissionModule */ = {
+			isa = PBXGroup;
+			children = (
+				B2F32CCB2C87581B00AD9BA4 /* Model */,
+				B210DD162C8CF06900C63E1A /* ViewModel */,
+				B210DD192C8CF07700C63E1A /* View */,
+			);
+			path = BugSubmissionModule;
+			sourceTree = "<group>";
+		};
+		B210DD162C8CF06900C63E1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B210DD172C8CF07200C63E1A /* BugSubmissionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B210DD192C8CF07700C63E1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B210DD1E2C8CF85A00C63E1A /* CustomView */,
+				B210DD1C2C8CF09200C63E1A /* BugSubmissionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B210DD1E2C8CF85A00C63E1A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B210DD212C8CF88B00C63E1A /* CustomImageSectionView.swift */,
+				B210DD232C8CF8A000C63E1A /* CustomPopupView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		B2F32CA52C8749EE00AD9BA4 = {
+			isa = PBXGroup;
+			children = (
+				B2F32CB02C8749EE00AD9BA4 /* Bug Submission Screen */,
+			);
+			sourceTree = "<group>";
+		};
+		B2F32CB02C8749EE00AD9BA4 /* Bug Submission Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B210DD0F2C8CF02200C63E1A /* Core */,
+				B210DD042C8CEFEF00C63E1A /* Networking */,
+				B210DD152C8CF05700C63E1A /* BugSubmissionModule */,
+				B210DD102C8CF03D00C63E1A /* Utility */,
+				B2F32CB52C8749F000AD9BA4 /* Assets.xcassets */,
+				B27D0ADC2C8BDBEC009C7872 /* Bug-Submission-Screen-Info.plist */,
+				B2F32CB72C8749F000AD9BA4 /* Preview Content */,
+			);
+			path = "Bug Submission Screen";
+			sourceTree = "<group>";
+		};
+		B2F32CB72C8749F000AD9BA4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B2F32CB82C8749F000AD9BA4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2F32CCB2C87581B00AD9BA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2F32CC12C874A3B00AD9BA4 /* Bug.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2F32CAD2C8749EE00AD9BA4 /* Bug Submission Screen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F32CBC2C8749F000AD9BA4 /* Build configuration list for PBXNativeTarget "Bug Submission Screen" */;
+			buildPhases = (
+				B2F32CAA2C8749EE00AD9BA4 /* Sources */,
+				B2F32CAB2C8749EE00AD9BA4 /* Frameworks */,
+				B2F32CAC2C8749EE00AD9BA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bug Submission Screen";
+			productName = "Bug Submission Screen";
+			productReference = B2F32CAE2C8749EE00AD9BA4 /* Bug Submission Screen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2F32CA62C8749EE00AD9BA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B2F32CAD2C8749EE00AD9BA4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = B2F32CA92C8749EE00AD9BA4 /* Build configuration list for PBXProject "Bug Submission Screen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2F32CA52C8749EE00AD9BA4;
+			productRefGroup = B2F32CA52C8749EE00AD9BA4;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2F32CAD2C8749EE00AD9BA4 /* Bug Submission Screen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2F32CAC2C8749EE00AD9BA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F32CB92C8749F000AD9BA4 /* Preview Assets.xcassets in Resources */,
+				B2F32CB62C8749F000AD9BA4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2F32CAA2C8749EE00AD9BA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B210DD092C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift in Sources */,
+				B210DD242C8CF8A000C63E1A /* CustomPopupView.swift in Sources */,
+				B210DD0E2C8CF01200C63E1A /* NotionRepository.swift in Sources */,
+				B2F32CB22C8749EE00AD9BA4 /* Bug_Submission_ScreenApp.swift in Sources */,
+				B210DD132C8CF04200C63E1A /* UIImage+Extension.swift in Sources */,
+				B210DD222C8CF88B00C63E1A /* CustomImageSectionView.swift in Sources */,
+				B210DD0A2C8CF00C00C63E1A /* SubmitBugToJiraUseCase.swift in Sources */,
+				B210DD182C8CF07200C63E1A /* BugSubmissionViewModel.swift in Sources */,
+				B2F32CC22C874A3B00AD9BA4 /* Bug.swift in Sources */,
+				B210DD1D2C8CF09200C63E1A /* BugSubmissionView.swift in Sources */,
+				B210DD0D2C8CF01200C63E1A /* JiraRepository.swift in Sources */,
+				B210DD142C8CF04200C63E1A /* ImagePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B2F32CBA2C8749F000AD9BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2F32CBB2C8749F000AD9BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2F32CBD2C8749F000AD9BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bug Submission Screen/Preview Content\"";
+				DEVELOPMENT_TEAM = L5U6M2GDVA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bug-Submission-Screen-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bug-Submission-Screen.App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2F32CBE2C8749F000AD9BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bug Submission Screen/Preview Content\"";
+				DEVELOPMENT_TEAM = L5U6M2GDVA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bug-Submission-Screen-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bug-Submission-Screen.App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2F32CA92C8749EE00AD9BA4 /* Build configuration list for PBXProject "Bug Submission Screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F32CBA2C8749F000AD9BA4 /* Debug */,
+				B2F32CBB2C8749F000AD9BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F32CBC2C8749F000AD9BA4 /* Build configuration list for PBXNativeTarget "Bug Submission Screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F32CBD2C8749F000AD9BA4 /* Debug */,
+				B2F32CBE2C8749F000AD9BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2F32CA62C8749EE00AD9BA4 /* Project object */;
+}
