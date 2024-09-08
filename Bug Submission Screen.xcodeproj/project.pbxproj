@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B200A3672C8D379700B0089D /* ImageUploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200A3662C8D379700B0089D /* ImageUploadService.swift */; };
 		B210DD092C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD072C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift */; };
 		B210DD0A2C8CF00C00C63E1A /* SubmitBugToJiraUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD082C8CF00C00C63E1A /* SubmitBugToJiraUseCase.swift */; };
 		B210DD0D2C8CF01200C63E1A /* JiraRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210DD0B2C8CF01200C63E1A /* JiraRepository.swift */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B200A3632C8D31FF00B0089D /* Bug Submission Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bug Submission Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B200A3662C8D379700B0089D /* ImageUploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadService.swift; sourceTree = "<group>"; };
 		B210DD072C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitBugToNotionUseCase.swift; sourceTree = "<group>"; };
 		B210DD082C8CF00C00C63E1A /* SubmitBugToJiraUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitBugToJiraUseCase.swift; sourceTree = "<group>"; };
 		B210DD0B2C8CF01200C63E1A /* JiraRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiraRepository.swift; sourceTree = "<group>"; };
@@ -35,7 +38,6 @@
 		B210DD212C8CF88B00C63E1A /* CustomImageSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageSectionView.swift; sourceTree = "<group>"; };
 		B210DD232C8CF8A000C63E1A /* CustomPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupView.swift; sourceTree = "<group>"; };
 		B27D0ADC2C8BDBEC009C7872 /* Bug-Submission-Screen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bug-Submission-Screen-Info.plist"; sourceTree = SOURCE_ROOT; };
-		B2F32CAE2C8749EE00AD9BA4 /* Bug Submission Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Bug Submission Screen.app"; path = "/Users/abdallah/Downloads/Bug Submission Screen/build/Debug-iphoneos/Bug Submission Screen.app"; sourceTree = "<absolute>"; };
 		B2F32CB12C8749EE00AD9BA4 /* Bug_Submission_ScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug_Submission_ScreenApp.swift; sourceTree = "<group>"; };
 		B2F32CB52C8749F000AD9BA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F32CB82C8749F000AD9BA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				B210DD062C8CF00600C63E1A /* Use Cases */,
 				B210DD052C8CEFFF00C63E1A /* Repositories */,
+				B200A3662C8D379700B0089D /* ImageUploadService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B2F32CB02C8749EE00AD9BA4 /* Bug Submission Screen */,
+				B200A3632C8D31FF00B0089D /* Bug Submission Screen.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,7 +191,7 @@
 			);
 			name = "Bug Submission Screen";
 			productName = "Bug Submission Screen";
-			productReference = B2F32CAE2C8749EE00AD9BA4 /* Bug Submission Screen.app */;
+			productReference = B200A3632C8D31FF00B0089D /* Bug Submission Screen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -240,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B200A3672C8D379700B0089D /* ImageUploadService.swift in Sources */,
 				B210DD092C8CF00C00C63E1A /* SubmitBugToNotionUseCase.swift in Sources */,
 				B210DD242C8CF8A000C63E1A /* CustomPopupView.swift in Sources */,
 				B210DD0E2C8CF01200C63E1A /* NotionRepository.swift in Sources */,

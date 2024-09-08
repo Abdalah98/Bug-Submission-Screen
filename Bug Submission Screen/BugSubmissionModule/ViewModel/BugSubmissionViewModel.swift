@@ -19,23 +19,26 @@ class BugSubmissionViewModel: ObservableObject {
         
         private let submitBugToNotionUseCase: SubmitBugToNotionUseCase
         private let submitBugToJiraUseCase: SubmitBugToJiraUseCase
-        
+        private let imageUploadService: ImageUploadService
+
         let priorities = ["Highest", "High", "Medium", "Low"]
         let labels = ["POC", "Update", "Dev", "Production", "Sprint", "TestFlight"]
         let assignees = ["Alice", "Bob", "Charlie", "David"]
 
-        init(
-            submitBugToNotionUseCase: SubmitBugToNotionUseCase,
-            submitBugToJiraUseCase: SubmitBugToJiraUseCase
-        ) {
-            self.submitBugToNotionUseCase = submitBugToNotionUseCase
-            self.submitBugToJiraUseCase = submitBugToJiraUseCase
-            let defaultPriority = ""
-            self.selectedPriority = defaultPriority
-            self.selectedLabel = nil
-            self.selectedAssignee = nil
-            self.bug = Bug(description: "", priority: defaultPriority,images: [], labels: [], assignee: "")
-        }
+    init(
+           submitBugToNotionUseCase: SubmitBugToNotionUseCase,
+           submitBugToJiraUseCase: SubmitBugToJiraUseCase,
+           imageUploadService: ImageUploadService = ImageUploadService()
+       ) {
+           self.submitBugToNotionUseCase = submitBugToNotionUseCase
+           self.submitBugToJiraUseCase = submitBugToJiraUseCase
+           self.imageUploadService = imageUploadService
+           let defaultPriority = ""
+           self.selectedPriority = defaultPriority
+           self.selectedLabel = nil
+           self.selectedAssignee = nil
+           self.bug = Bug(description: "", priority: defaultPriority, images: [], labels: [], assignee: "")
+       }
         
         // Updates the bug data from the UI
         func updateBug() {
@@ -55,24 +58,37 @@ class BugSubmissionViewModel: ObservableObject {
             bug.description = ""
         }
     
-    // Method to submit bug
+    /// Submits the bug to Jira and/or Notion
         func submitBug(selectedToJira: Bool, selectedToNotion: Bool) {
+            guard !selectedImages.isEmpty else {
+                print("No images to upload")
+                return
+            }
+
             self.isLoading = true
-            DispatchQueue.global(qos: .userInitiated).async {
-                // Simulate network delay
-                sleep(2)
-                DispatchQueue.main.async {
-                    if selectedToJira {
-                        self.submitBugToJira()
-                    }
-                    if selectedToNotion {
-                        self.submitBugToNotion()
-                    }
+
+            // Upload images first
+            imageUploadService.uploadImagesToImgur(images: selectedImages) { [weak self] imageUrls in
+                guard let self = self else { return }
+                guard let imageUrls = imageUrls else {
                     self.isLoading = false
+                    print("Failed to upload images")
+                    return
                 }
+
+                // Update the bug with the image URLs
+                self.bug.imageUrls = imageUrls
+
+                if selectedToJira {
+                    self.submitBugToJira()
+                }
+                if selectedToNotion {
+                    self.submitBugToNotion()
+                }
+
+                self.isLoading = false
             }
         }
-    
     //MARK: - Private Func
         // Submit the bug to Notion
         private func submitBugToNotion() {
@@ -107,4 +123,5 @@ class BugSubmissionViewModel: ObservableObject {
                 }
             }
         }
+
     }

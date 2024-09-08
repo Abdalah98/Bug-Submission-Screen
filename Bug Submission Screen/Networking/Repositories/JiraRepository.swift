@@ -31,7 +31,22 @@ class JiraRepositoryImpl: JiraRepository {
                 "summary": bug.description,
                 "issuetype": ["name": "Bug"],
                 "labels": bug.labels,
-                "assignee": ["name": bug.assignee]
+                "assignee": ["name": bug.assignee],
+                "description": [
+                    "type": "doc",
+                    "version": 1,
+                    "content": [
+                        [
+                            "type": "paragraph",
+                            "content": [
+                                [
+                                    "type": "text",
+                                    "text": "Bug description: \(bug.description)\nImage URLs: \(bug.imageUrls.joined(separator: "\n"))"
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
             ]
         ]
 

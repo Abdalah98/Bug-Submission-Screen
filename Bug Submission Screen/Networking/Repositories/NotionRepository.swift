@@ -41,7 +41,9 @@ class NotionRepositoryImpl: NotionRepository {
                 "Title": ["rich_text": [["text": ["content": bug.description]]]],
                 "Labels": ["multi_select": bug.labels.map { ["name": $0] }],
                 "Assignee": ["rich_text": [["text": ["content": bug.assignee]]]],
-                "Formatted Date": ["rich_text": [["text": ["content": formattedDate]]]]
+                "Formatted Date": ["rich_text": [["text": ["content": formattedDate]]]],
+                "Images": ["rich_text": [["text": ["content": bug.imageUrls.joined(separator: "\n")]]]]
+
             ]
         ]
 

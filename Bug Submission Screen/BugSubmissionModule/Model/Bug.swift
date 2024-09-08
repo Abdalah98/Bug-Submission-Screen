@@ -15,4 +15,5 @@ struct Bug: Identifiable {
      var images: [UIImage]
     var labels: [String]
     var assignee: String
+    var imageUrls: [String] = []
 }
